@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from clone_a_gram.views import PhotoDetailsView, PhotoCreateView, \
-    UserDetailsView
+from clone_a_gram.views import (PhotoDetailsView,
+                                PhotoCreateView,
+                                UserDetailsView)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^photo/(?P<pk>(\d+))', PhotoDetailsView.as_view(),
-        url(r'^add_photo$'), PhotoCreateView.as_view()),
-    url(r'^user/(?P<pk>(\d+))', UserDetailsView.as_view())
+    url(r'^add_photo$'), PhotoCreateView.as_view()),
+    url(r'^user/(?P<pk>(\d+))', UserDetailsView.as_view()),
 ]
