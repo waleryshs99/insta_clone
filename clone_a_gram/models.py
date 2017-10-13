@@ -5,7 +5,8 @@ from django.db import models
 
 
 class Photo(models.Model):
-    path = models.TextField()
+
+    picture = models.ImageField()
     creation = models.DateField(auto_now_add=datetime.datetime.now())
     added_by = models.ForeignKey(User)
 
