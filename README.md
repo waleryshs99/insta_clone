@@ -5,3 +5,20 @@ Ustawienie upstreamu do Master repo:
 Jak sprawdzić czy macie remote'y do waszego GitHuba oraz master repo:
 
 `git remote -v`
+
+
+
+
+Views names: 
+
+MainView
+
+LoginView
+
+UserCreateView
+
+UserDetailsView
+
+UserModifyView
+
+PhotoDetailsView
