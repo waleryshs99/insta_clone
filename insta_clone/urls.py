@@ -21,5 +21,5 @@ from clone_a_gram.views import PhotoDetailsView, PhotoCreateView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^photo/(?P<pk>(\d+))', PhotoDetailsView.as_view(),
-        url(r'^add_photo$'), PhotoCreateView.as_view())
+    url(r'^add_photo$', PhotoCreateView.as_view()))
 ]
